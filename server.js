@@ -7,7 +7,7 @@ var express = require('express');
 var exphbs = require('express-handlebars');
 var hbs = require('handlebars');
 
-var twitData = require('./blogpostData');
+var blogpostData = require('./blogpostData');
 var app = express();
 var port = process.env.PORT || 3019;
 
@@ -18,7 +18,7 @@ app.use(express.static('public'));
 
 app.get('/',function(req,res,next) 
 {
-  res.status(200).render('blogPage',{posts:blogpageData, show:true});
+  res.status(200).render('blogPage',{posts:blogpostData, show:true});
 });
 
 app.get('insertobject:t', function(req, res, next)
@@ -26,7 +26,7 @@ app.get('insertobject:t', function(req, res, next)
   var t = req.params.t;
   if(twitData[t])
   {
-    res.status(200).render('blogPage', {posts:blogpageData[[t]], show:false});
+    res.status(200).render('blogPage', {posts:blogpostData[[t]], show:false});
   }
   else
   {
