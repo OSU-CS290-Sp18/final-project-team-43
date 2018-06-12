@@ -24,17 +24,24 @@ a{
     background-color: hotpink;
     font-size: 18px;
     line-height: 22px;
+    text-align: center;
 }
 
 .navlist
 {
     margin: 0 0 0 20px;
-    padding: 0;
+    padding: 0; 
 }
 
-.navitem
+.navItem
 {
     display: inline-block;
+    padding-right: 30px;
+}
+
+ul
+{
+    list-style: none;
 }
 
 a
@@ -55,7 +62,7 @@ a:focus
 
 .navlink a
 {
-padding: 8px 10px;
+padding: 10px 10px;
 display: inline-block;
 }
 
@@ -64,15 +71,15 @@ display: inline-block;
     box-shadow: inset 0 -3px white;
 }
 
-.navbar-search
+.navBar-search
 {
-    float: right;
-    margin-right: 20px;
+    float: center;
+    margin-right: 10px;
     padding: 0;
     line-height: 40px;
 }
 
-#navbar-search-input
+#navItem-search-input
 {
     padding: 4px;
     font-size: 16px;
@@ -81,13 +88,13 @@ display: inline-block;
     border-radius: 2px;
 }
 
-#navbar-search-input:focus
+#navItem-search-input:focus
 {
   outline: none;
   background-color: hotpink;
 }
 
-#navbar-search-button
+#navBar-search-button
 {
     margin-left: -5px;
     font-size: 16px;
@@ -97,12 +104,12 @@ display: inline-block;
     cursor: pointer;
 }
 
-#navbar-search-button:hover
+#navBar-search-button:hover
 {
     color: aqua;
 }
 
-#navbar-search-button:focus
+#navBar-search-button:focus
 {
     color: aqua;
     outline: none;
@@ -126,11 +133,28 @@ display: inline-block;
 
 .post-icon
 {
-
+    font-size: 20px;
 }
 
 .post-content
 {
-    
+    margin-top: 10px;
 }
 
+.post-content .post-title
+{
+    margin-top: 10px;
+}
+
+.post-content .post-body
+{
+    margin-top: 10px;
+    margin: 0;
+}
+
+post-content .post-author
+{
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+}
