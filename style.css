@@ -74,6 +74,11 @@ ul a:focus
     outline: none;
 }
 
+ul a:hover .navSubItem a
+{
+    display: block;
+}
+
 .navlink a
 {
 padding: none;
@@ -83,6 +88,24 @@ display: inline-block;
 .navlink.active
 {
     box-shadow: inset 0 -3px white;
+}
+
+.navSubItem
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: none;
+}
+
+.navSubItem:hover
+{
+    background-color: black;
+}
+
+.navSubItem a
+{
+    display: none;
 }
 
 /*
