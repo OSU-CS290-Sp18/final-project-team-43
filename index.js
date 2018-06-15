@@ -1,23 +1,87 @@
 
+function createNewPost(postText, postAuthor, postDate, postTitle)
+{
+  var postElem = document.createElement('article');
+  postElem.classList.add('post');
 
+  var postContentElem = document.createElement('div');
+  postContentElem.classList.add('post-content');
+  postElem.appendChild(postContentElem);
 
+  var postTextNode = document.createTextNode(postText);
+  var postTextElem = document.createElement('p');
+  postTextElem.classlist.add('post-body');
 
+  var postAuthorNode = document.createTextNode(postAuthor);
+  var postAuthorLinkElem = document.createElement('a');
+  postAuthorLinkElem.href = '#';
+  postAuthorLinkElem.appendChild(postAuthorNode);
 
+  var postAuthorElem = document.createElement('p');
+  postAuthorElem.classList.add('post-author');
+  postAuthorElem.appendChild(postAuthorLinkElem);
+  postElem.appendChild(postAuthorElem);
 
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+  var postDateNode = document.createTextNode(postDate);
+  var postDateElem = document.createElement('p');
+  postDateElem.classList.add('post-date');
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
+  var postTitleNode = document.createTextNode(postTitle);
+  var postTitleElem = document.createElement('p');
+  postTitleElem.classlist.add('post-title');
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+  var postcontainer = document.querySelector('main.container');
+  postcontainer.appendChild(postElem);
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+}
+
+var allPosts = [];
+
+function handleModalAcceptClick()
+{
+  var postBody = document.getElementById('post-body');
+  var postAuthor = document.getElementById('post-author');
+  var postDate = document.getElementById('post-date');
+  var postTitle = document.getElementById('post-title');
+
+  if (postBody && postAuthor && postDate && postTitle)
+  {
+    allPosts.push({text: postBody, author: postAuthor, date: postDate, title: postTitle});
+
+    hidePostModal();
+  }
+  else
+  {
+    alert('Please enter all fields that are required.');
   }
 }
+
+function showMakePostModal()
+{
+  var modalBackdrop = document.getElementById('modal-backdrop');
+  var creatPostModal = document.getElementById('make-post-modal');
+
+  modalBackdrop.classlist.remove('hidden');
+  createPostModal.classList.remove('hidden');
+}
+
+
+function clearValues()
+{
+  var postInputElements = document.getElementsByClassName('post-input-element');
+  for (var i = 0; i < postInputElements.length; i++)
+  {
+    var input = postInputElements[i].querySelector('input', 'textarea');
+    input.value = '';
+  }
+}
+
+function hidePostModal()
+{
+  var modalBackdrop = document.getElementById('modal-backdrop');
+  var creatPostModal = document.getElementById('make-post-modal');
+
+  modalBackdrop.classlist.add('hidden');
+  createPostModal.classList.add('hidden');
+}
+
