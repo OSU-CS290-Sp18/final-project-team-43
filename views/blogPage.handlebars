@@ -1,0 +1,11 @@
+{{>header}}
+<main class="container">
+    {{#each posts}}
+    {{> post}}
+    {{/each}}
+
+</main>
+/* Not so sure about this part*/
+       {{#if show}}
+        {{>createTwitModal}}
+    {{/if}}
