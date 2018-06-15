@@ -1,11 +1,10 @@
 {{>header}}
 <main class="container">
     {{#each posts}}
-    {{> post}}
+    {{>post}}
     {{/each}}
 
 </main>
-/* Not so sure about this part*/
        {{#if show}}
-        {{>make-post-modal}}
+        {{>makePost}}
     {{/if}}
