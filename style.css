@@ -136,17 +136,22 @@ display: inline-block;
 }
 .dropDownContent a:hover 
 {
-   background-color: #f1f1f1; 
+   background-color: gray; 
+}
+
+li.category
+{
+    display: inline-block;
 }
 
 .dropbutton:hover .dropDownContent
 {
-    display: block;
+    display: inline-block;
 }
 
 .category:hover .dropDownContent
 {
-    display:block;
+    display: inline-block;
 }
 
 .dropDownContent:hover .dropbutton
