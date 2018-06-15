@@ -6,10 +6,15 @@
     "scripts": {
         "test": "echo\"Error: No test specified\" && exit 1",
         "start": "node server.js",
-        "build":"handlebars ",
+        "build": "handlebars ",
         "prestart": "npm run build"
     },
-    "repository": {
-        
+    "repository": {},
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "express-handlebars": "^3.0.0",
+        "handlebars": "^4.0.11",
+        "mongodb": "^3.0.10"
     }
 }
