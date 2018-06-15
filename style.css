@@ -61,6 +61,7 @@ ul a:hover
     background-color: black;
 }
 
+
 ul a:focus
 {
     outline: none;
@@ -83,6 +84,20 @@ display: inline-block;
     padding: none;
     margin: none;
     text-align: center;
+}
+ul a, .category{
+    display: inline-block;
+    color: azure;
+    text-align: center;
+}
+
+div .dropDownContent{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 ul a:hover .navSubItem
