@@ -85,3 +85,30 @@ function hidePostModal()
   createPostModal.classList.add('hidden');
 }
 
+window.addEventListener('DOMContentLoaded', function() 
+{
+  var newPostButton = document.getElementById('make-new-post');
+  if (newPostButton)
+  {
+    newPostButton.addEventListener('click', showMakePostModal);
+  }
+
+  var modalCloseButton = document.querySelector('#make-post-modal');
+  if (modalCloseButton)
+  {
+    modalCloseButton.addEventListener('click', hidePostModal);
+  }
+
+  var modalCancelButton = document.querySelector('#make-post-modal');
+  if (modalCancelButton)
+  {
+    modalCancelButton.addEventListener('click', hidePostModal);
+  }
+
+  var modalAcceptButton = document.querySelector('#make-post-modal');
+  if (modalAcceptButton)
+  {
+    modalAcceptButton.addEventListener('click', handleModalAcceptClick);
+  }
+  
+})
