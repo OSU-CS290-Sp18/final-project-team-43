@@ -1,42 +1,163 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+   
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Wowee Blogger</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+    <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" defer></script>
+    <script src="index.js"></script>
 </head>
 
-
 <body>
+
     <header>
-        <a href="#"><h1 class = "site-title">Eliza's posts</h1></a>
-        <nav class="navbar">
-            <ul class="navlist">
-                <li class=" navItem"><a href="#">Home</a></li>
-                <li class=" navItem"><a href="#">New Post</a></li>
-                <li class=" navItem"><a href="#">All Posts</a></li>
-                <li class=" navItem"><a href="#">Category</a>
-                    <ul>
-                        <li class = "navSubItem"><a href = "#">Tim's Posts</a></li>
-                        <li class = "navSubItem"><a href = "#">Eliza's Posts</a></li>
-                        <li class = "navSubItem"><a href = "#">Others' Posts</a></li>
-                    </ul>
-                </li>
-                <!--
-                <li class=" navBar-search">
-                    <input type="text" id="navItem-search-input" placeholder="Type in key words to search">
-                    <button type="button" id="navItem-search-button"></button>
-                </li>
-            -->
-            </ul>
-        </nav>
+
+    <a href="#"><h1 class = "site-title">Wowee Blogger</h1></a>
+
+    <nav class = "navbar">
+        <ul class = "navlist">
+            <li class = " navItem"><a href="#">Home</a></li>
+            <button id = "make-new-post" class = "modalbutton">New Post</button>
+
+            <li class = "category" ><a href = "javascript:void(0)" class = "dropbutton">Category</a> 
+           
+                <div class = "dropDownContent">
+                <a href = "#">Tim's Posts</a>
+                <a href = "#">Eliza's Posts</a>
+                <a href = "#">Others' Posts</a>
+                </div>
+    </ul>
+
+        </ul>
+
+
+
+    </nav>
     </header>
+
+    <main class="container">
+
+        <article class="post">
+            <div class="post-icon">
+                <i class = ""></i>
+            </div>
+            <div class="post-content">
+                <p class = "post-title" >Eliza's work One</p>
+                <p class = "post-author">
+                        <a href = "#" >Eliza N</a>
+                    </p>
+                <p class = "post-date">
+                       6/14/2018
+                </p>
+                <p class = "post-body" >
+                        This is the post body...
+                </p>
+            </div>
+        </article>
+
+        <article class="post">
+            <div class="post-icon">
+                <i class = ""></i>
+            </div>
+            <div class="post-content">
+                <p class = "post-title" >Eliza's work Two</p>
+                <p class = "post-author">
+                        <a href = "#" >Eliza N</a>
+                    </p>
+                <p class = "post-date">
+                       6/14/2018
+                </p>
+                <p class = "post-body" >
+                    Fun fact: You can't eat watermeloon and drink milk the same time...      
+                </p>
+            </div>
+        </article>
+
+        <article class="post">
+                <div class="post-icon">
+                    <i class = ""></i>
+                </div>
+                <div class="post-content">
+                    <p class = "post-title" >Eliza post Three</p>
+                    <p class = "post-author">
+                            <a href = "#" >Eliza N</a>
+                        </p>
+                    <p class = "post-date">
+                           6/14/2018
+                    </p>
+                    <p class = "post-body" >
+                       This is a random post.
+                    </p>
+                </div>
+            </article>
     
-    <main class="eliza-post">
-    <h2>Posts....</h2>
+            <article class="post">
+                    <div class="post-icon">
+                        <i class = ""></i>
+                    </div>
+                    <div class="post-content">
+                        <p class = "post-title" >Alright I promise is the last one</p>
+                        <p class = "post-author">
+                                <a href = "#" >Eliza N</a>
+                            </p>
+                        <p class = "post-date">
+                               6/15/2018
+                        </p>
+                        <p class = "post-body" >
+                           Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee Wowee 
+                        </p>
+                    </div>
+                </article>
+        
+
+
     </main>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="make-post-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Make a Post</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="post-input-element">
+            <label for="post-body">Text</label>
+            <textarea id="post-body"></textarea>
+          </div>
+
+          <div class="post-input-element">
+            <label for="post-title">Title</label>
+            <input type="text" id="post-title">
+          </div>
+
+          <div class="post-input-element">
+                <label for="post-author">Author</label>
+                <input type="text" id="post-author">
+              </div>
+
+          <div class="post-input-element">
+            <label for="post-date">Date</label>
+            <input type="text" id="post-date">
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Make Post</button>
+        </div>
+
+      </div>
+    </div>
+
 </body>
 </html>
