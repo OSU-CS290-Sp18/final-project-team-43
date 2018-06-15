@@ -73,10 +73,23 @@ padding: none;
 display: inline-block;
 }
 
-.category
+.modalbutton
 {
-    position: relative;
-    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    background-color: #333333;
+    text-align: center;
+    padding: 18px 40px;
+    margin: none;
+    line-height: 40px;
+    border: none;
+    cursor: pointer; 
+}
+
+.modalbutton:hover
+{
+    background-color: black;
 }
 
 .dropbutton
@@ -84,11 +97,24 @@ display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     color: white;
+    background-color: #333333;
     text-align: center;
     padding: 18px 40px;
+    margin: none;
     line-height: 40px;
     border: none;
     cursor: pointer;
+}
+
+.dropbutton:hover
+{
+    background-color: black;
+}
+
+.category
+{
+    position: relative;
+    display: inline-block;
 }
 
 .dropDownContent
@@ -110,10 +136,18 @@ display: inline-block;
 }
 .dropDownContent a:hover 
 {
-    background-color: #f1f1f1;
+   background-color: #f1f1f1; 
 }
 
+.dropbutton:hover .dropDownContent
+{
+    display: block;
+}
 
+.dropDownContent:hover .dropbutton
+{
+    background-color: black;
+}
 
 .container
 {
@@ -183,7 +217,6 @@ body::-webkit-scrollbar-button {
     background: gray; 
     border-radius: 10px;
 }
-
 
 #modal-backdrop
 {
