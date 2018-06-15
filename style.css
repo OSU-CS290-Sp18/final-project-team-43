@@ -144,6 +144,11 @@ display: inline-block;
     display: block;
 }
 
+.category:hover .dropDownContent
+{
+    display:block;
+}
+
 .dropDownContent:hover .dropbutton
 {
     background-color: black;
