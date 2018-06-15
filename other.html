@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wowee Blogger</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+    <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" defer></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+    <a href="#"><h1 class = "site-title">Wowee Blogger</h1></a>
+
+    <nav class = "navbar">
+        <ul class = "navlist">
+            <li class = " navItem"><a href="#">Home</a></li>
+            <button id = "make-new-post" class = "modalbutton">New Post</button>
+
+            <li class = "category" ><a href = "javascript:void(0)" class = "dropbutton">Category</a> 
+           
+                <div class = "dropDownContent">
+                <a href = "timposts.html">Tim's Posts</a>
+                <a href = "eliza.html">Eliza's Posts</a>
+                <a href = "other.html">Others' Posts</a>
+                </div>
+    </ul>
+
+        </ul>
+
+
+
+    </nav>
+    </header>
+
+    <main class="container">
+
+
+    </main>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="make-post-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Make a Post</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="post-input-element">
+            <label for="post-body">Text</label>
+            <textarea id="post-body"></textarea>
+          </div>
+
+          <div class="post-input-element">
+            <label for="post-title">Title</label>
+            <input type="text" id="post-title">
+          </div>
+
+          <div class="post-input-element">
+                <label for="post-author">Author</label>
+                <input type="text" id="post-author">
+              </div>
+
+          <div class="post-input-element">
+            <label for="post-date">Date</label>
+            <input type="text" id="post-date">
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Make Post</button>
+        </div>
+
+      </div>
+    </div>
+
+</body>
+</html>
