@@ -81,6 +81,7 @@ app.listen(port, function () {
 });
 */
 /*-------*/
+var bodyParser = require('body-parser');
 var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
@@ -88,13 +89,18 @@ var hbs = require('handlebars');
 
 var blogpostData = require('./blogpostData');
 var app = express();
-var port = process.env.PORT || 3019;
+var port = process.env.PORT || 4137;
 
-var mongoHost = process.env.MONGO_HOST;
+var mongoHost = "classmongo.engr.oregonstate.edu";
 var mongoPort = process.env.MONGO_PORT || '27017';
-var mongoUsername = process.env.MONGO_USERNAME;
-var mongoPassword = process.env.MONGO_PASSWORD;
-var mongoDBName = process.env.MONGO_DB_NAME;
+var mongoUsername = "cs290_mariast";
+var mongoPassword = "cs290_mariast";
+var mongoDBName = "cs290_mariast";
+
+var MongoClient = require('mongodb').MongoClient;
+
+var Mongo = require('mongodb');
+/*var client = Mongo.connect("mongodb://mariast");*/
 
 var mongoURL = "mongodb://" + mongoUsername + ":" + mongoPassword + "@" + mongoHost + ":" + mongoPort + "/" + mongoDBName;
 var mongoDB = null;
@@ -103,7 +109,7 @@ var mongoDB = null;
 app.engine('handlebars',exphbs({defaultLayout:'main'}));
 app.set('view engine', 'handlebars');
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 app.use(express.static('public'));
 
 app.get('/',function(req,res,next) {
@@ -140,6 +146,8 @@ MongoClient.connect(mongoURL, function(err, client)
   });
 });
 
+/*
 app.listen(port, function () {
   console.log("== Server is listening on port", port);
 });
+*/
